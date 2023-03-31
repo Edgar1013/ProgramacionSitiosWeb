@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Utilidades</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="../scripts/utilidades.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">Component 2023 SAS - Utilidades</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Administrador</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inventario</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Utilidades</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Calcular venta</h4>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="valorCompra">Valor de compra</label>
+                                <input type="number" class="form-control" id="valorCompra"
+                                    placeholder="Ingrese el valor de compra del producto">
+                            </div>
+                            <div class="form-group">
+                                <label for="utilidad">Porcentaje de utilidad</label>
+                                <input type="number" class="form-control" id="utilidad"
+                                    placeholder="Ingrese el porcentaje de utilidad que desea aplicar">
+                            </div>
+                            <div class="form-group">
+                                <label for="iva">Porcentaje de IVA</label>
+                                <input type="number" class="form-control" id="iva"
+                                    placeholder="Ingrese el porcentaje de IVA que corresponde al producto">
+                            </div>
+                            <button type="button" class="btn btn-primary" onclick="calcular()">Calcular</button>
+                            <button type="button" class="btn btn-primary" onclick="limpiar()">Limpiar</button>
+
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                        <div class="form-group">
+                            <label for="valorVenta">El valor de venta es:</label>
+                            <input type="text" class="form-control" id="valorVenta" placeholder="Valor de venta" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="ganancia">La ganancia es:</label>
+                            <input type="text" class="form-control" id="ganancia" placeholder="Valor de la ganancia" disabled>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
