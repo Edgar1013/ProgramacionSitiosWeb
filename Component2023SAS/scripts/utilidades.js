@@ -34,3 +34,12 @@ function limpiar() {
 }
 
 
+    // habilitar el botkn de actualizar al buscar un proeducto
+    //function habilitar (){
+     
+    //(Consultar_act_cantidad.on('click')) 
+        
+       // document.getElementById('btn_actualizar').disabled = false;
+    //} 
+ 
+
